@@ -1,3 +1,6 @@
+setting.js 
+process.env.DBUSER = "";
+process.env.DBPASS = "";
 
 # node-red-contrib-mongodb4
 A MongoDB client node for Node-Red powered by MongoDB Driver 4.
