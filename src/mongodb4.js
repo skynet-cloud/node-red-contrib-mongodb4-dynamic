@@ -37,6 +37,13 @@ module.exports = function (RED) {
           password: node.credentials.password,
         };
         node.n.options.authMechanism = n.authMechanism;
+      } else {
+        node.n.options.auth = {
+          username: process.env.DBUSER,
+          password: process.env.DBPASS,
+        };
+        node.n.options.authMechanism = n.authMechanism;
+
       }
 
       // authentication source
